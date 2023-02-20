@@ -1,0 +1,186 @@
+.header {
+  padding-top: 5px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    position: relative;
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include breakpoint(800px) {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    @include breakpoint(800px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &__logoname {
+    @include breakpoint(800px) {
+      display: none;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 22px;
+
+    @include breakpoint(800px) {
+      gap: 16px;
+    }
+  }
+
+  &__link {
+    color: $black;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 10px 1px 10px;
+
+    @include breakpoint(800px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(9px);
+
+    @include breakpoint(800px) {
+      transform: translateY(0px);
+    }
+  }
+
+  &__btn {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 8px 24px;
+    color: $black;
+    border: 1px solid $black;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+
+    @include breakpoint(800px) {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 6px 16px;
+    }
+
+    &:hover {
+      color: $white;
+      background: $black;
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 60px;
+    height: 45px;
+    position: relative;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    transform: scale(0.4, 0.5) translateX(10px);
+  }
+  &__burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  &__burger span:nth-child(1) {
+    top: 0px;
+  }
+  &__burger span:nth-child(2) {
+    top: 18px;
+  }
+  &__burger span:nth-child(3) {
+    top: 18px;
+  }
+  &__burger span:nth-child(4) {
+    top: 36px;
+  }
+
+  &__burger.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  &__burger.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &__burger.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &__burger.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+}
+
+@include breakpoint(800px) {
+  .header__burger {
+    display: block;
+  }
+  .header__links {
+    display: none;
+  }
+  .scroll-hidden .header__links {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    margin-top: 24px;
+    flex-direction: column;
+
+    width: 100%;
+    height: calc(100vh - 100% - 30px);
+    background: $bg;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+  }
+}

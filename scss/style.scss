@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestRegular1602-hint.ttf");
+  src: local("../fonts/OnestRegular1602-hint.ttf"),
+    url("../fonts/OnestRegular1602-hint.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestMedium1602-hint.ttf");
+  src: local("../fonts/OnestMedium1602-hint.ttf"),
+    url("../fonts/OnestMedium1602-hint.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/OnestBold1602-hint.ttf");
+  src: local("../fonts/OnestBold1602-hint.ttf"),
+    url("../fonts/OnestBold1602-hint.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "mixins";
+@import "vars";
+@import "general";
+@import "parts/header";
+@import "parts/home";
+@import "parts/overcome";
+@import "parts/card";
+@import "parts/get";
+@import "parts/why";
+@import "parts/review";
+@import "parts/text";
+@import "parts/footer";

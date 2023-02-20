@@ -1,0 +1,187 @@
+.get {
+  &__inner {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(800px) {
+      margin-top: 80px;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+    color: $black;
+
+    @include breakpoint(800px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @include breakpoint(440px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 524px;
+    @include breakpoint(440px) {
+      gap: 20px;
+      width: 100%;
+    }
+  }
+
+  &__card {
+    background: #f9fafb;
+    padding: 32px 36px 0 36px;
+    border: 1px solid $black;
+    border-radius: 24px;
+    position: relative;
+  }
+
+  &__card-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    color: $black;
+    margin-bottom: 18px;
+    @include breakpoint(800px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__card-content {
+    position: relative;
+    max-width: 368px;
+    width: 100%;
+    padding: 0px 24px 8px 24px;
+    display: flex;
+    align-items: center;
+    min-height: 160px;
+  }
+
+  &__card-btn {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+    background: $white;
+    border: 1px solid $black;
+    border-bottom: 4px solid $black;
+
+    border-radius: 16px;
+    padding: 16px 64px;
+    height: min-content;
+
+    @include breakpoint(800px) {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 16px 42px;
+    }
+    @include breakpoint(440px) {
+      // transform: translateY(-30px);
+      // transform: translateX(-30px);
+    }
+
+    &:active {
+      transform: translateY(3px);
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__card-slack {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+    box-shadow: 6px 6px 0px rgba(138, 138, 138, 0.25);
+    background: $white;
+    padding: 20px;
+    z-index: 0;
+  }
+
+  &__card-slack-img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__card-number {
+    position: absolute;
+    left: -60px;
+    top: 25%;
+
+    font-weight: 800;
+    font-size: 172px;
+    line-height: 220px;
+    z-index: 2;
+    color: $white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $black;
+
+    @include breakpoint(440px) {
+      font-size: 80px;
+      line-height: 102px;
+
+      left: auto;
+
+      right: 10px;
+      top: -30px;
+    }
+  }
+
+  &__card-number1 {
+    transform: rotate(10deg);
+
+    @include breakpoint(440px) {
+    }
+  }
+
+  &__card-content2 {
+    max-width: 362px;
+    background: #ffffff;
+    box-shadow: 6px 0px 0px rgba(138, 138, 138, 0.25);
+    border-radius: 16px 16px 0 0;
+    padding: 24px;
+    padding-bottom: 0;
+    background: $white;
+  }
+
+  &__card-content-img {
+    width: 100%;
+    height: auto;
+  }
+  &__card-content-img:nth-child(1) {
+    margin-bottom: 10px;
+  }
+
+  &__card-number2 {
+    transform: rotate(-5deg);
+
+    @include breakpoint(440px) {
+    }
+  }
+
+  &__card-number3 {
+    transform: rotate(7deg);
+
+    @include breakpoint(440px) {
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.overcome {
+  &__inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 150px;
+
+    @include breakpoint(800px) {
+      margin-top: 80px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    color: $black;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+    // white-space: nowrap;
+    position: relative;
+    z-index: 10;
+
+    @include breakpoint(800px) {
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @include breakpoint(440px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__cards {
+    position: relative;
+    z-index: 10;
+    display: flex;
+
+    gap: 24px;
+
+    @include breakpoint(800px) {
+      width: 100%;
+      gap: 20px;
+    }
+    @include breakpoint(440px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    padding: 36px;
+    width: 300px;
+
+    background: $white2;
+
+    border: 1px solid #000000;
+    border-radius: 24px;
+
+    @include breakpoint(440px) {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+
+  &__card-title {
+    color: $black;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 80px;
+
+    margin-bottom: 18px;
+    text-align: center;
+
+    @include breakpoint(800px) {
+      margin-bottom: 16px;
+      font-size: 48px;
+      line-height: 54px;
+    }
+  }
+
+  &__card-p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+    text-align: center;
+
+    @include breakpoint(800px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__svg {
+    width: 90%;
+    position: absolute;
+    top: -90px;
+    right: -130px;
+    z-index: 0;
+    pointer-events: none;
+
+    @include breakpoint(440px) {
+      width: 100%;
+      top: 90px;
+      right: -130px;
+    }
+  }
+}

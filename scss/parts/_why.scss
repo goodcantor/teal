@@ -1,0 +1,151 @@
+.why {
+  &__inner {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+
+    @include breakpoint(800px) {
+      gap: 30px;
+      margin-top: 80px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 54px;
+
+    @include breakpoint(800px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include breakpoint(800px) {
+      gap: 18px;
+    }
+  }
+
+  &__cards-top {
+    display: flex;
+    gap: 24px;
+    @include breakpoint(800px) {
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  &__card-top {
+    width: 33.333%;
+    background: #f9fafb;
+    border: 1px solid $black;
+    border-radius: 24px;
+    padding: 30px 36px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include breakpoint(800px) {
+      width: 100%;
+    }
+  }
+
+  &__card-icon {
+    margin-bottom: 8px;
+    width: 42px;
+    height: auto;
+  }
+
+  &__card-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: $black;
+    max-width: 430px;
+
+    @include breakpoint(800px) {
+      max-width: 1000px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__card-subtitle {
+    color: $black;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 420px;
+    @include breakpoint(800px) {
+      max-width: 1000px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__cards-bottom {
+    display: flex;
+    gap: 24px;
+    @include breakpoint(800px) {
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  &__card-bottom {
+    width: 50%;
+    background: #f9fafb;
+    border: 1px solid $black;
+    border-radius: 24px;
+    padding: 30px 36px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include breakpoint(800px) {
+      width: 100%;
+    }
+  }
+
+  &__card-bottom-last {
+    background: #6bcc8e;
+  }
+
+  &__card-btn {
+    text-align: center;
+    width: min-content;
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: $black;
+    background: $white;
+    border: 1px solid $black;
+    border-bottom: 4px solid $black;
+
+    border-radius: 16px;
+    padding: 16px 64px;
+    height: min-content;
+
+    @include breakpoint(800px) {
+      font-size: 16px;
+      line-height: 20px;
+      width: 100%;
+      padding: 16px 16px;
+    }
+    &:active {
+      transform: translateY(3px);
+      border-bottom: 1px solid $black;
+      margin-bottom: 3px;
+    }
+  }
+}
