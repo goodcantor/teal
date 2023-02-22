@@ -67,6 +67,7 @@ p {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,15 +75,10 @@ body {
   font-weight: 400;
 }
 
-.scroll-hidden {
-  overflow-y: hidden;
-}
-
 .wrapper {
   position: relative;
   background: #f4f4f4;
   min-height: 100vh;
-  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -139,6 +135,7 @@ li {
   }
 }
 .header__links {
+  transform: translateY(4px);
   display: flex;
   gap: 22px;
 }
@@ -166,7 +163,7 @@ li {
   display: flex;
   align-items: center;
   gap: 8px;
-  transform: translateY(9px);
+  transform: translateY(14px);
 }
 @media (max-width: 800px) {
   .header__btns {
@@ -270,7 +267,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 88px;
+  margin-top: 95px;
 }
 @media (max-width: 800px) {
   .home__inner {
@@ -328,9 +325,6 @@ li {
     padding: 16px 42px;
   }
 }
-.home__btn:hover {
-  box-shadow: 0px 6px 0px #000000;
-}
 .home__btn:active {
   margin-bottom: 77px;
   transform: translateY(3px);
@@ -338,35 +332,20 @@ li {
   box-shadow: 0px 0px 0px #000000;
 }
 .home__svg {
+  display: none;
   pointer-events: none;
-  margin-top: -120px;
-  margin-bottom: 250px;
-  width: 700px;
-}
-@media (max-width: 1000px) {
-  .home__svg {
-    margin-top: -220px;
-    margin-bottom: 150px;
-    width: 400px;
-  }
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
 }
 @media (max-width: 800px) {
   .home__svg {
-    margin-top: -200px;
-    margin-bottom: -100px;
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  .home__svg {
-    width: 400px;
+    display: block;
   }
 }
 @media (max-width: 440px) {
   .home__svg {
-    margin-top: -250px;
-    margin-bottom: -150px;
-    width: 330px;
+    margin-bottom: 40px;
   }
 }
 
@@ -456,6 +435,8 @@ li {
   line-height: 24px;
   color: #181818;
   text-align: center;
+  max-width: 206px;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .overcome__card-p {
@@ -861,6 +842,10 @@ li {
 }
 .why__card-bottom-last {
   background: #6bcc8e;
+  border: none;
+}
+.why__card-subtitle-link {
+  text-decoration: underline;
 }
 .why__card-btn {
   text-align: center;
@@ -950,6 +935,7 @@ li {
   line-height: 36px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 4px;
 }
 @media (max-width: 800px) {
@@ -1046,6 +1032,11 @@ li {
   }
 }
 
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
 .footer__inner {
   position: relative;
   z-index: 1;
@@ -1132,8 +1123,18 @@ li {
   background-color: #f4f4f4;
   width: 100%;
   height: 100%;
+  z-index: 9999;
 }
 
 .preloader-remove {
   display: none !important;
+}
+
+.home__lot {
+  margin-top: -100px;
+}
+@media (max-width: 800px) {
+  .home__lot {
+    display: none;
+  }
 }

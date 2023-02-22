@@ -37,22 +37,25 @@ p {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Onest", sans-serif;
   font-weight: 400;
+  
 }
 
 .scroll-hidden {
-  overflow-y: hidden;
+  // overflow-y: hidden;
+  // scroll-padding-top: 420px;
 }
 
 .wrapper {
   position: relative;
   background: $bg;
   min-height: 100vh;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   overflow: hidden;
 }
 

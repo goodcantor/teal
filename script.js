@@ -9,7 +9,8 @@ burger.onclick = function () {
 
 LottieScrollTrigger({
   target: "#animationWindow",
-  path: "https://lottie.host/4acc2fee-e4c9-4ef1-bb0c-14b3b3e6b51b/7jVqkAD5kn.json",
+  path: "imgs/lottie.json",
+  // path: "https://lottie.host/4acc2fee-e4c9-4ef1-bb0c-14b3b3e6b51b/7jVqkAD5kn.json",
   // path: "https://assets.codepen.io/35984/tapered_hello.json",
   speed: "slow",
   scrub: true, // seconds it takes for the playhead to "catch up"

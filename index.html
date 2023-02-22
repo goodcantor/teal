@@ -152,7 +152,7 @@
                 <a href="#" class="header__link">How it works</a>
               </li>
               <li class="header__link">
-                <a href="#" class="header__link">Why it works</a>
+                <a href="#why" class="header__link">Why it works</a>
               </li>
             </ul>
             <div class="header__btns">
@@ -176,13 +176,14 @@
               helps you address
             </p>
             <a href="#" class="home__btn" id="home__btn">Install to Slack</a>
-            <!-- <svg
+            <svg
               class="home__svg"
               width="974"
               height="715"
               viewBox="0 0 974 715"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
             >
               <rect
                 x="0.468538"
@@ -599,13 +600,8 @@
                 stroke="black"
                 stroke-width="0.937077"
               />
-            </svg> -->
-            <!-- <lottie-player
-              id="lottiesvg"
-              src="imgs/lottie.json"
-              class="lottie"
-              autoPlay="false"
-            ></lottie-player> -->
+            </svg>
+
             <div class="home__lot">
               <div
                 width="100%"
@@ -663,8 +659,9 @@
           <div class="card__inner">
             <h2 class="card__title">
               We created a
-              <span class="card__underline">free Slack bot</span> that predicts
-              burnout in your team and helps you address its root causes
+              <a href=""><span class="card__underline">free Slack bot</span></a>
+              that predicts burnout in your team and helps you address it's root
+              causes
             </h2>
             <div class="card__ps">
               <span class="card__p">Free for one year</span>
@@ -723,7 +720,7 @@
       </section>
       <sectioin class="why">
         <div class="container">
-          <div class="why__inner">
+          <div class="why__inner" id="why">
             <h4 class="why__text">Why does it work?</h4>
             <div class="why__cards">
               <div class="why__cards-top">
@@ -731,7 +728,10 @@
                   <img src="imgs/1.svg" alt="" class="why__card-icon" />
                   <h4 class="why__card-title">It’s science-based and smth</h4>
                   <p class="why__card-subtitle">
-                    Our methodology based on widely accepted research
+                    Our methodology based on
+                    <a href="" class="why__card-subtitle-link"
+                      >widely accepted research</a
+                    >
                   </p>
                 </div>
                 <div class="why__card-top" data-aos="zoom-in">
@@ -843,8 +843,8 @@
             </div>
           </div>
         </div>
+        <img src="imgs/footer.svg" alt="" class="footer__decor" />
       </footer>
-      <img src="imgs/footer.svg" alt="" class="footer__decor" />
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.6/lottie.min.js"></script>

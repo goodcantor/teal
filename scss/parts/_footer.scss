@@ -1,4 +1,7 @@
 .footer {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
   &__inner {
     position: relative;
     z-index: 1;

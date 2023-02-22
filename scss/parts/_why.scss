@@ -116,7 +116,12 @@
 
   &__card-bottom-last {
     background: #6bcc8e;
+    border: none;
   }
+
+    &__card-subtitle-link {
+      text-decoration: underline;
+    }
 
   &__card-btn {
     text-align: center;

@@ -1,4 +1,5 @@
 .overcome {
+  
   &__inner {
     width: 100%;
     display: flex;
@@ -86,6 +87,8 @@
     line-height: 24px;
     color: $black;
     text-align: center;
+    max-width: 206px;
+    margin: 0 auto;
 
     @include breakpoint(800px) {
       font-size: 16px;
