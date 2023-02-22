@@ -37,7 +37,7 @@ if (document.body.clientWidth > 800) {
         autoplay: false,
         path: vars.path,
         rendererSettings: vars.rendererSettings || {
-          preserveAspectRatio: "xMidYMid slice",
+          preserveAspectRatio: "xMidYMid meet",
         },
       });
     for (let p in vars) {
