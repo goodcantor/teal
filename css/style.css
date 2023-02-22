@@ -1134,3 +1134,13 @@ li {
 .preloader-remove {
   display: none !important;
 }
+
+.home__lot {
+  image-rendering: optimizeQuality;
+}
+
+svg {
+  -webkit-backface-visibility: hidden !important;
+  transform: translateZ(0) !important;
+  transform: unset !important;
+}
