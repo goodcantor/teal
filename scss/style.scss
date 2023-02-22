@@ -41,7 +41,7 @@
 @import "parts/text";
 @import "parts/footer";
 
-#animationWindow {
+#animationWindow > svg {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -69,7 +69,7 @@
 
 svg {
   // -webkit-backface-visibility: hidden !important;
-  -webkit-transform: translateZ(0) scale(1, 1) !important;
-  transform: translateZ(0) !important;
+  // -webkit-transform: translateZ(0) scale(1, 1) !important;
+  // transform: translateZ(0) !important;
   // transform: unset !important;
 }

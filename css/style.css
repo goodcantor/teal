@@ -1115,7 +1115,7 @@ li {
   transform: translateY(375px) translateX(274px);
 }
 
-#animationWindow {
+#animationWindow > svg {
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
@@ -1136,8 +1136,4 @@ li {
 
 .preloader-remove {
   display: none !important;
-}
-
-svg {
-  transform: translateZ(0) !important;
 }

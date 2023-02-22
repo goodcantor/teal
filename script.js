@@ -19,7 +19,7 @@ LottieScrollTrigger({
 function LottieScrollTrigger(vars) {
   let playhead = { frame: 0 },
     target = gsap.utils.toArray(vars.target)[0],
-    speeds = { slow: "+=4000", medium: "+=1000", fast: "+=500" },
+    speeds = { slow: "+=3000", medium: "+=1000", fast: "+=500" },
     st = {
       trigger: target,
       pin: true,
@@ -59,8 +59,6 @@ function LottieScrollTrigger(vars) {
   });
   return animation;
 }
-
-
 
 // let mm = gsap.matchMedia();
 
