@@ -55,18 +55,21 @@
     padding: 16px 64px;
 
     margin-bottom: 74px;
-    // transition: all 0.1s ease;
+    // transition: border-bottom 0.1s ease;
 
     @include breakpoint(800px) {
       font-size: 16px;
       line-height: 20px;
       padding: 16px 42px;
     }
-
+    &:hover {
+      box-shadow: 0px 6px 0px #000000;
+    }
     &:active {
       margin-bottom: 77px;
       transform: translateY(3px);
       border-bottom: 1px solid $black;
+      box-shadow: 0px 0px 0px #000000;
     }
   }
 
