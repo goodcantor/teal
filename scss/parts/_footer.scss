@@ -29,6 +29,7 @@
     padding-top: 30px;
     display: flex;
     gap: 140px;
+    margin-right: 10%;
     @include breakpoint(800px) {
       flex-direction: column;
       gap: 42px;
