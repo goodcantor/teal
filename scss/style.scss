@@ -68,8 +68,8 @@
 }
 
 svg {
-  -webkit-backface-visibility: hidden !important;
+  // -webkit-backface-visibility: hidden !important;
   -webkit-transform: translateZ(0) scale(1, 1) !important;
   transform: translateZ(0) !important;
-  transform: unset !important;
+  // transform: unset !important;
 }

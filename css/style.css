@@ -1139,7 +1139,5 @@ li {
 }
 
 svg {
-  -webkit-backface-visibility: hidden !important;
   transform: translateZ(0) !important;
-  transform: unset !important;
 }
