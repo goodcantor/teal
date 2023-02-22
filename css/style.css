@@ -1118,6 +1118,9 @@ li {
 #animationWindow {
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
 }
 
 .preloader {
@@ -1133,10 +1136,6 @@ li {
 
 .preloader-remove {
   display: none !important;
-}
-
-.home__lot {
-  image-rendering: optimizeQuality;
 }
 
 svg {

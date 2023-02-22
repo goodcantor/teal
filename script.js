@@ -12,14 +12,14 @@ LottieScrollTrigger({
   path: "https://lottie.host/4acc2fee-e4c9-4ef1-bb0c-14b3b3e6b51b/7jVqkAD5kn.json",
   // path: "https://assets.codepen.io/35984/tapered_hello.json",
   speed: "slow",
-  scrub: 2, // seconds it takes for the playhead to "catch up"
+  scrub: true, // seconds it takes for the playhead to "catch up"
   // you can also add ANY ScrollTrigger values here too, like trigger, start, end, onEnter, onLeave, onUpdate, etc. See https://greensock.com/docs/v3/Plugins/ScrollTrigger
 });
 
 function LottieScrollTrigger(vars) {
   let playhead = { frame: 0 },
     target = gsap.utils.toArray(vars.target)[0],
-    speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
+    speeds = { slow: "+=4000", medium: "+=1000", fast: "+=500" },
     st = {
       trigger: target,
       pin: true,
