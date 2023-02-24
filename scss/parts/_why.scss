@@ -54,6 +54,9 @@
     @include breakpoint(800px) {
       width: 100%;
     }
+    @include breakpoint(440px) {
+      padding: 30px;
+    }
   }
 
   &__card-icon {
@@ -112,6 +115,9 @@
     @include breakpoint(800px) {
       width: 100%;
     }
+    @include breakpoint(440px) {
+      padding: 30px;
+    }
   }
 
   &__card-bottom-last {
@@ -119,9 +125,9 @@
     border: none;
   }
 
-    &__card-subtitle-link {
-      text-decoration: underline;
-    }
+  &__card-subtitle-link {
+    text-decoration: underline;
+  }
 
   &__card-btn {
     text-align: center;

@@ -21,7 +21,7 @@ if (document.body.clientWidth > 800) {
   function LottieScrollTrigger(vars) {
     let playhead = { frame: 0 },
       target = gsap.utils.toArray(vars.target)[0],
-      speeds = { slow: "+=3000", medium: "+=1000", fast: "+=500" },
+      speeds = { slow: "+=2000", medium: "+=1000", fast: "+=500" },
       st = {
         trigger: target,
         pin: true,

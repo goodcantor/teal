@@ -271,7 +271,7 @@ li {
 }
 @media (max-width: 800px) {
   .home__inner {
-    margin-top: 42px;
+    margin-top: 54px;
   }
 }
 .home__title {
@@ -358,7 +358,7 @@ li {
 }
 @media (max-width: 800px) {
   .overcome__inner {
-    margin-top: 80px;
+    margin-top: 30px;
     flex-wrap: wrap;
   }
 }
@@ -452,6 +452,13 @@ li {
   z-index: 0;
   pointer-events: none;
 }
+@media (max-width: 800px) {
+  .overcome__svg {
+    width: 100%;
+    top: 10px;
+    right: -130px;
+  }
+}
 @media (max-width: 440px) {
   .overcome__svg {
     width: 100%;
@@ -464,7 +471,7 @@ li {
   position: relative;
 }
 .card__inner {
-  margin-top: 300px;
+  margin-top: 140px;
   border-radius: 24px;
   background: #56bdff;
   display: flex;
@@ -646,6 +653,7 @@ li {
   border-bottom: 4px solid #181818;
   border-radius: 16px;
   padding: 16px 64px;
+  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
 }
@@ -782,6 +790,11 @@ li {
     width: 100%;
   }
 }
+@media (max-width: 440px) {
+  .why__card-top {
+    padding: 30px;
+  }
+}
 .why__card-icon {
   margin-bottom: 8px;
   width: 42px;
@@ -839,6 +852,11 @@ li {
     width: 100%;
   }
 }
+@media (max-width: 440px) {
+  .why__card-bottom {
+    padding: 30px;
+  }
+}
 .why__card-bottom-last {
   background: #6bcc8e;
   border: none;
@@ -848,6 +866,7 @@ li {
 }
 .why__card-btn {
   text-align: center;
+  width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
   position: relative;
@@ -862,6 +881,7 @@ li {
   border-bottom: 4px solid #181818;
   border-radius: 16px;
   padding: 16px 64px;
+  height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
 }
@@ -1048,6 +1068,7 @@ li {
 }
 @media (max-width: 800px) {
   .footer__inner {
+    padding: 30px;
     margin-top: 150px;
     flex-direction: column;
     gap: 60px;
@@ -1129,6 +1150,7 @@ li {
 .home__lot {
   margin-top: -100px;
   width: 100%;
+  pointer-events: none;
   border-radius: 8px;
 }
 @media (max-width: 800px) {

@@ -67,6 +67,7 @@
 .home__lot {
   margin-top: -100px;
   width: 100%;
+  pointer-events: none;
 
   border-radius: 8px;
   @include breakpoint(800px) {

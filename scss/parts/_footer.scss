@@ -16,6 +16,7 @@
     margin-top: 240px;
 
     @include breakpoint(800px) {
+      padding: 30px;
       margin-top: 150px;
       flex-direction: column;
       gap: 60px;
