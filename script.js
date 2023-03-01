@@ -10,8 +10,8 @@ burger.onclick = function () {
 if (document.body.clientWidth > 800) {
   LottieScrollTrigger({
     target: "#animationWindow",
-    path: "https://lottie.host/3702ac41-f7d8-4134-9c15-a3dd7942c9b6/XpIXsErywu.json",
-    // path: "imgs/lottie.json",
+    path: "imgs/lottie.json",
+    // path: "https://lottie.host/3702ac41-f7d8-4134-9c15-a3dd7942c9b6/XpIXsErywu.json",
     // path: "https://lottie.host/4acc2fee-e4c9-4ef1-bb0c-14b3b3e6b51b/7jVqkAD5kn.json",
     // path: "https://assets.codepen.io/35984/tapered_hello.json",
     speed: "slow",
@@ -63,6 +63,16 @@ if (document.body.clientWidth > 800) {
     return animation;
   }
 }
+
+let logicalProcessorCount = navigator.hardwareConcurrency;
+let svgAnimation = document.querySelector("#home__lot");
+let svgStatic = document.querySelector("#home__svg");
+
+if (logicalProcessorCount < 7) {
+  svgAnimation.classList.add("svghidden");
+  svgStatic.classList.add("svgvisible");
+}
+console.log(logicalProcessorCount)
 
 // LottieScrollTrigger({
 //   target: "#animationWindow",

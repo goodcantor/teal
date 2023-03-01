@@ -41,6 +41,15 @@
 @import "parts/text";
 @import "parts/footer";
 
+
+.svgvisible {
+  display: block;
+}
+
+.svghidden {
+  display: none;
+}
+
 #animationWindow > svg {
   padding-top: 20px;
   padding-bottom: 20px;

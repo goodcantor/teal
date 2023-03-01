@@ -1125,6 +1125,14 @@ li {
   transform: translateY(375px) translateX(274px);
 }
 
+.svgvisible {
+  display: block;
+}
+
+.svghidden {
+  display: none;
+}
+
 #animationWindow > svg {
   padding-top: 20px;
   padding-bottom: 20px;
