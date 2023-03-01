@@ -68,11 +68,11 @@ let logicalProcessorCount = navigator.hardwareConcurrency;
 let svgAnimation = document.querySelector("#home__lot");
 let svgStatic = document.querySelector("#home__svg");
 
-if (logicalProcessorCount < 7) {
+if (logicalProcessorCount < 9) {
   svgAnimation.classList.add("svghidden");
   svgStatic.classList.add("svgvisible");
 }
-console.log(logicalProcessorCount)
+// console.log(logicalProcessorCount)
 
 // LottieScrollTrigger({
 //   target: "#animationWindow",
