@@ -10,7 +10,8 @@ burger.onclick = function () {
 if (document.body.clientWidth > 800) {
   LottieScrollTrigger({
     target: "#animationWindow",
-    path: "imgs/lottie.json",
+    path: "https://lottie.host/3702ac41-f7d8-4134-9c15-a3dd7942c9b6/XpIXsErywu.json",
+    // path: "imgs/lottie.json",
     // path: "https://lottie.host/4acc2fee-e4c9-4ef1-bb0c-14b3b3e6b51b/7jVqkAD5kn.json",
     // path: "https://assets.codepen.io/35984/tapered_hello.json",
     speed: "slow",
