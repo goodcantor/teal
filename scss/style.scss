@@ -79,7 +79,7 @@
   pointer-events: none;
 
   border-radius: 8px;
-  @include breakpoint(800px) {
+  @include breakpoint(1261px) {
     display: none;
   }
 }

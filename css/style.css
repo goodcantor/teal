@@ -338,7 +338,7 @@ li {
   height: auto;
   margin-bottom: 80px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1261px) {
   .home__svg {
     display: block;
   }
@@ -1161,7 +1161,7 @@ li {
   pointer-events: none;
   border-radius: 8px;
 }
-@media (max-width: 800px) {
+@media (max-width: 1261px) {
   .home__lot {
     display: none;
   }
